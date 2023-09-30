@@ -19,19 +19,25 @@ def TestaFuncao(funcao):
     for test in tests:
         status = 'PASS'
         resposta = funcao(test['test'])
-        if resposta != test['resposta']:
-            # fails.append(test['test'], test['resposta'], resposta)
-            status = 'FAIL'
-            print_test(status, test['test'], test['resposta'], resposta)
+        for doc in resposta:
+            if not doc in test['resposta']:
+                status = 'FAIL'
+                print_test(status, test['test'], resposta, test['resposta'])
         else:
             print(f'Passou [{cont:02d}]')
         cont += 1
 
-d1 = {'a':1, 'b':2}
-d2 = {'b':2 ,'a':1}
-l1 = [d1, d2]
-l2 = [d2, d1]
-print(l1 == l2)
+# d1 = {'a':1, 'b':2}
+# d2 = {'b':2 ,'a':1}
+# l1 = [d1, d2]
+# l2 = [d2, d1]
+# print(l1 == l2)
+# print(d1 == d2)
+
+# resposta =  [{'nome': 'Elisa', 'idade': 25, 'materia': 'GEOGRAFIA'}, {'nome': 'João', 'idade': 20, 'materia': 'MATEMATICA'}, {'nome': 'Luana', 'idade': 29, 'materia': 'MATEMATICA'}]
+# gabarito =  [{'nome': 'João', 'idade': 20, 'materia': 'MATEMATICA'}, {'nome': 'Elisa', 'idade': 25, 'materia': 'GEOGRAFIA'}, {'nome': 'Luana', 'idade': 29, 'materia': 'MATEMATICA'}]
+
+# print(resposta == gabarito)
 
 # TESTANDO A FUNÇÃO ACIMA COM MOCK
 
@@ -49,9 +55,7 @@ print(l1 == l2)
 #         return '-- resposta errada --'
 #     return resposta
 
-
-
-# TestaFunçao(mockfunc)
+# TestaFuncao(mockfunc)
 
 
 # ESSE CODIGO FOI USADO PARA GERAR OS TESTES ALEATÓRIOS
