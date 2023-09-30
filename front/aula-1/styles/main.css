@@ -1,11 +1,46 @@
+p {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
 .header {
   display: flex;
   flex-direction: row;
   background-color: #011e30;
 
   height: 64px;
+
+  justify-content: space-around;
+  align-items: center;
 }
 
-.header-boxes {
-  color: white;
+.grid-box {
+  display: flex;
+
+  gap: 80px;
+}
+
+.box {
+  border: 2px solid #fff;
+
+  border-radius: 10px;
+
+  padding: 10px;
+}
+
+.box:hover {
+  cursor: pointer;
+
+  background-color: #fff;
+  color: #011e30;
+}
+
+.box > p {
+  font-size: 14px;
+
+  font-weight: bold;
+}
+
+.box:hover > p {
+  color: #011e30;
 }
