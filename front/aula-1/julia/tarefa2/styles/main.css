@@ -1,0 +1,26 @@
+.foto1 {
+    position: absolute;
+    width: 350px;
+    height: 380px;
+    left: 30px;
+    top: 40px;
+    background: url(image.png);
+    border-radius: 4px; 
+}
+
+.espaço {
+    position: relative;
+    width: 700px;
+    height: 600px;
+    background: #7910f1;
+}
+
+.descrição {
+    position: absolute;
+    width: 216px;
+    height: 190px;
+    left: 413px;
+    top: 40px;
+    color:blueviolet
+}
+
