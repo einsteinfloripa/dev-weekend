@@ -7,7 +7,6 @@
     background: url(image.png);
     border-radius: 4px; 
 }
-
 .foto2 {
     position: absolute;
     width: 108px;
@@ -17,7 +16,6 @@
     background: url(image);
     border-radius: 4px;
 }
-
 .foto3 {
     position: absolute;
     width: 109px;
@@ -27,7 +25,6 @@
     background: url(image);
     border-radius: 4px;
 }
-
 .foto4 {
     position: absolute;
     width: 108px;
@@ -39,6 +36,8 @@
 
 }
 
+
+
 .espaco {
     position: relative;
     width: 700px;
@@ -48,6 +47,17 @@
 
 
 }
+
+
+.bg-separador {
+    position: absolute;
+    width: 700px;
+    height: 322px;
+    left: 0px;
+    top: 278px;
+    background: #FFFFFF;
+}
+
 
 .descricao {
     position: absolute;
@@ -67,11 +77,11 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 21px;
     /* identical to box height */
     color: #2493F8;
-}  
+}
 .descricao-texto {
 /* Essa é uma camisa vermelha feita de algodão com detalhes listrados preto e vermelho. */
     position: absolute;
@@ -94,23 +104,21 @@
     left: 413px;
     top: 66px;
     font-family: 'Roboto';
-    font-style: normal;
+    font-style: bold;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 21px;
     /* identical to box height */
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #384047;
 }
-    
 .botao-adicionar {
     /* Auto layout */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 25px 60px 25px 60px;
     gap: 1px;
     position: absolute;
     width: 183px;
@@ -120,9 +128,6 @@
     background: #2493F8;
     border-radius: 3px;
 }
-
-
-    
 .adicionar-texto {
     width: 98px;
     height: 21px;
@@ -139,31 +144,243 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-}
-    
+}  
 .carrinho {
     width: 24px;
     height: 24px;
-    
     /* Inside auto layout */
     flex: none;
     order: 1;
     flex-grow: 0;
+    padding: 10px;
 }
-    
-.vector1 {
+
+
+
+.sustentabilidade {
     position: absolute;
-    left: 4.17%;
-    right: 13.94%;
-    top: 4.17%;
-    bottom: 8.33%;
-    background: #004391;
+    width: 166px;
+    height: 99px;
+    left: 413px;
+    top: 295px;
+    color: #67737E;
 }
-    
-.vector2 {
+.sustentabilidade-texto {
     position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-} 
+    width: 139px;
+    height: 16px;
+    top: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.folha-icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 155px;
+}
+.informacoes {
+    position: absolute;
+    width: 133px;
+    height: 68px;
+
+}
+.item1 {
+    position: absolute;
+    width: 133px;
+    height: 16px;
+    top: 30px;
+}
+.item1-texto {
+    position: absolute;
+    width: 117px;
+    height: 16px;
+    left: 18px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #67737E;
+}
+.list-icon1 {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+}
+.item2 {
+    position: absolute;
+    width: 105px;
+    height: 16px;
+    top: 55px;
+}
+.item2-texto {
+    position: absolute;
+    width: 88px;
+    height: 16px;
+    left: 18px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #67737E;
+}
+.list-icon2 {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+}
+.item3 {
+    position: absolute;
+    width: 121px;
+    height: 16px;
+    top: 80px;
+}
+.item3-texto {
+    position: absolute;
+    width: 104px;
+    height: 16px;
+    left: 18px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #67737E;
+}
+.list-icon3 {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+}
+.separador {
+    position: absolute;
+    width: 240px;
+    height: 2px;
+    left: -10px;
+    top: 115px;
+    background: #F6F7F9;
+    ;
+}
+
+
+
+.entrega {
+    position: absolute;
+    width: 178px;
+    height: 94px;
+}
+.entrega-texto {
+    position: absolute;
+    width: 66px;
+    height: 16px;
+    left: 413px;
+    top: 438px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #67737E;
+}
+.entrega-icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 493px;
+    top: 434px;
+}
+.informacoes2 {
+    position: absolute;
+    width: 178px;
+    height: 62px;
+}
+.item4 {
+    position: absolute;
+    width: 98px;
+    height: 16px;
+}
+.item4-texto {
+    position: absolute;
+    width: 82px;
+    height: 16px;
+    left: 429px;
+    top: 466px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #67737E;
+}
+.list-icon4 {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: 413px;
+    top: 466px;
+}
+.item5 {
+    position: absolute;
+    width: 124px;
+    height: 16px;
+}
+.item5-texto {
+    position: absolute;
+    width: 107px;
+    height: 16px;
+    left: 430px;
+    top: 488px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #67737E;
+}
+.list-icon5 {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: 413px;
+    top: 489px;
+}
+.item6 {
+    position: absolute;
+    width: 178px;
+    height: 16px;
+}
+.item6-texto {
+    position: absolute;
+    width: 161px;
+    height: 16px;
+    left: 430px;
+    top: 512px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #67737E;
+}
+.list-icon6 {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: 413px;
+    top: 511px;
+}
+
+
+
+
+
+
