@@ -8,19 +8,162 @@
     border-radius: 4px; 
 }
 
-.espaço {
+.foto2 {
+    position: absolute;
+    width: 108px;
+    height: 130px;
+    left: 30px;
+    top: 439px;
+    background: url(image);
+    border-radius: 4px;
+}
+
+.foto3 {
+    position: absolute;
+    width: 109px;
+    height: 130px;
+    left: 150px;
+    top: 438px;
+    background: url(image);
+    border-radius: 4px;
+}
+
+.foto4 {
+    position: absolute;
+    width: 108px;
+    height: 130px;
+    left: 272px;
+    top: 438px;
+    background: url(image);
+    border-radius: 4px;
+
+}
+
+.espaco {
     position: relative;
     width: 700px;
     height: 600px;
-    background: #7910f1;
+    left: 350px;
+    background:#F6F7F9;
+
+
 }
 
-.descrição {
+.descricao {
     position: absolute;
     width: 216px;
     height: 190px;
     left: 413px;
     top: 40px;
+    border-radius: 3px;
     color:blueviolet
 }
+.preco {
+    position: absolute;
+    width: 47px;
+    height: 21px;
+    left: 414px;
+    top: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #2493F8;
+}  
+.descricao-texto {
+/* Essa é uma camisa vermelha feita de algodão com detalhes listrados preto e vermelho. */
+    position: absolute;
+    width: 216px;
+    height: 63px;
+    left: 413px;
+    top: 92px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    /* or 131% */
+    color: #67737E;
+}
+.camisa-vermelha {
+    position: absolute;
+    width: 176px;
+    height: 21px;
+    left: 413px;
+    top: 66px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #384047;
+}
+    
+.botao-adicionar {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 60px 25px 60px;
+    gap: 1px;
+    position: absolute;
+    width: 183px;
+    height: 47px;
+    left: 413px;
+    top: 183px;
+    background: #2493F8;
+    border-radius: 3px;
+}
 
+
+    
+.adicionar-texto {
+    width: 98px;
+    height: 21px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+    color: #004391;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+    
+.carrinho {
+    width: 24px;
+    height: 24px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+    
+.vector1 {
+    position: absolute;
+    left: 4.17%;
+    right: 13.94%;
+    top: 4.17%;
+    bottom: 8.33%;
+    background: #004391;
+}
+    
+.vector2 {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+} 
