@@ -1,0 +1,43 @@
+@use "color" as color;
+@use "font" as font;
+
+.footer {
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+
+    padding: 1.5rem 0;
+
+    background-color: color.$secondary;
+
+    & > div {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 364px;
+        height: 61px;
+
+        border-radius: 50px;
+
+        & > p {
+            @include font.text($size: 20px);
+            text-align: center;
+            width: 204px;
+        }
+    }
+}
+
+.enabled {
+    background-color: color.$enable;
+}
+
+.disabled {
+    background-color: color.$tertiary;
+}
