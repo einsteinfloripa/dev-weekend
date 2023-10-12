@@ -1,11 +1,11 @@
-p {
-  color: #fff;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
   font-family: "Roboto", sans-serif;
 }
 
 .header {
   display: flex;
-  flex-direction: row;
   background-color: #011e30;
 
   height: 64px;
@@ -17,30 +17,26 @@ p {
 .grid-box {
   display: flex;
 
-  gap: 80px;
+  gap: 20px;
 }
 
 .box {
+  font-size: 14px;
+
+  color: #fff;
+
   border: 2px solid #fff;
 
   border-radius: 10px;
 
   padding: 10px;
+
+  font-weight: bold;
 }
 
 .box:hover {
   cursor: pointer;
 
   background-color: #fff;
-  color: #011e30;
-}
-
-.box > p {
-  font-size: 14px;
-
-  font-weight: bold;
-}
-
-.box:hover > p {
   color: #011e30;
 }

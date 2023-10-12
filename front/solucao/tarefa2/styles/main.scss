@@ -1,0 +1,134 @@
+@use "./color" as color;
+@use "./font" as font;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+    font-family: "Roboto", sans-serif;
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    padding: 20px;
+
+    width: 700px;
+    height: 600px;
+    & > div:first-child {
+        display: flex;
+
+        gap: 35px;
+
+        background: color.$tertiary;
+        background: linear-gradient(
+            180deg,
+            color.$tertiary 0%,
+            color.$tertiary 50%,
+            rgba(255, 255, 255, 1) 50%,
+            rgba(255, 255, 255, 1) 100%
+        );
+    }
+}
+
+.line {
+    border: none;
+
+    height: 2px;
+    background-color: color.$tertiary;
+}
+
+.img-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+    width: min-content;
+}
+
+.img-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 216px;
+
+    gap: 30px;
+
+    margin-top: 20px;
+    margin-bottom: 90px;
+
+    & > div:first-child {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+.price-value {
+    @include font.title($color: color.$primary);
+}
+
+.price-title {
+    @include font.title($color: color.$title);
+}
+
+.price-subtitle {
+    @include font.subtitle($color: color.$secondary);
+}
+
+.price-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+
+    width: 183px;
+    height: 47px;
+    border-radius: 3px;
+
+    background-color: color.$primary;
+
+    border-color: color.$primary;
+
+    & > p {
+        @include font.title($color: color.$primary-dark);
+    }
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 100%;
+}
+
+.list-container-title {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    @include font.title($color: color.$secondary);
+}
+
+.list-container-item {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    @include font.subtitle($color: color.$secondary);
+}

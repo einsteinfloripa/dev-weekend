@@ -1,0 +1,113 @@
+@use "color" as color;
+@use "font" as font;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+    display: flex;
+
+    padding: 20px;
+    width: 700px;
+    height: 600px;
+    gap: 35px;
+    font-family: "Roboto", sans-serif;
+
+    & > div:first-child {
+        display: flex;
+
+        gap: 35px;
+
+        background: color.$tertiary;
+        background: linear-gradient(
+            180deg,
+            color.$tertiary 0%,
+            color.$tertiary 50%,
+            rgba(255, 255, 255, 1) 50%,
+            rgba(255, 255, 255, 1) 100%
+        );
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    gap: 70px;
+}
+
+.img-footer {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 25px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+.price-container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.price-title {
+    @include font.title(color.$title);
+}
+
+.price {
+    @include font.title(color.$primary);
+}
+
+.price-subtitle {
+    @include font.subtitle(color.$secondary);
+}
+
+.button-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+
+    width: 183px;
+    height: 47px;
+    border-radius: 3px;
+
+    background-color: color.$primary;
+    color: color.$primary-dark;
+
+    & > p {
+        @include font.title($color: color.$primary-dark);
+    }
+}
+
+.info-container {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    @include font.title($color: color.$secondary);
+}
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 100%;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    @include font.subtitle($color: color.$secondary);
+}
