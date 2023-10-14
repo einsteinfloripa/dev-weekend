@@ -66,16 +66,30 @@ function allowFinishOrder() {
   }
 }
 
-function confirmYourOrder () {
+function confirmYourOrder() {
   const allowedFinishOrder =
     lastFoodSelected != null &&
     lastDrinkSelected != null &&
     lastDissertSelected != null;
   if (allowedFinishOrder) {
+    document.querySelectorAll(".name-item")[0].textContent = "Todos";
+    document.querySelectorAll(".name-item")[1].textContent = "Violão";
+    document.querySelectorAll(".name-item")[2].textContent = "Motorola";
+
+    document.querySelectorAll(".price-item")[0].textContent = "3,20";
+    document.querySelectorAll(".price-item")[1].textContent = "4,60";
+    document.querySelectorAll(".price-item")[2].textContent = "7,16";
+
+
+    document.querySelector(".total-price").textContent = Number(document.querySelectorAll(".price-item")[0].textContent.replace(",","."))
+      + Number(document.querySelectorAll(".price-item")[1].textContent.replace(",",".")) + Number(document.querySelectorAll(".price-item")[2].textContent.replace(",","."));
+
+    document.querySelector(".total-price").textContent = "R$ " + document.querySelector(".total-price").textContent.replace(".",",")
+    
     document.querySelector(".order-screen").classList.remove("hidden");
   }
 }
 
-function cancelYourOrder () {
+function cancelYourOrder() {
   document.querySelector(".order-screen").classList.add("hidden");
 }
