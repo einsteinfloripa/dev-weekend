@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.global_div{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+.top{
+    background: rgb(228,222,222);
+    background: linear-gradient(180deg, rgba(228,222,222,1) 0%, rgba(255,255,255,1) 50%);
+}
+.imgs{
+    display: flex;
+    gap: 13px;
+    margin-top: 13px;
+}
+.t-shirt{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.price{
+    color:#2493F8;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.t-shit_title{
+    display: flex;
+    color: rgba(56, 64, 71, 1);
+}
+
+.text_about{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #67737E;
+}
+.buy{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+.botao{
+    display: flex;
+    flex-direction: row;
+    background-color: #2493F8;
+    border-radius: 3px;
+    gap: 1px;
+    border-style: none;
+    width: 190px;
+    height: 47px;
+    align-items: center;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.inside_botao{
+    width: 98px;
+    height: 21px;
+    text-align: center;
+    color:  #004391;
+    font-size: 18px;
+    line-height: 21.09px;
+}
+.sustainability{
+    margin-top:45px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.divice{
+    margin-top: 40px;
+    background-color: #F6F7F9;
+    width: 240px;
+    height: 2px;
+}
+.delivery{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.elements_icons{
+    color:#67737E;
+}
+ 
+.title_element{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color:#67737E;
+} 
+article{
+    margin-left: 24px;
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+}
