@@ -67,7 +67,13 @@ function allowFinishOrder() {
 }
 
 function confirmYourOrder () {
-  document.querySelector(".order-screen").classList.remove("hidden");
+  const allowedFinishOrder =
+    lastFoodSelected != null &&
+    lastDrinkSelected != null &&
+    lastDissertSelected != null;
+  if (allowedFinishOrder) {
+    document.querySelector(".order-screen").classList.remove("hidden");
+  }
 }
 
 function cancelYourOrder () {
