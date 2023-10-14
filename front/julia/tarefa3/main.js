@@ -72,17 +72,16 @@ function confirmYourOrder() {
     lastDrinkSelected != null &&
     lastDissertSelected != null;
   if (allowedFinishOrder) {
-    document.querySelectorAll(".name-item")[0].textContent = "Todos";
-    document.querySelectorAll(".name-item")[1].textContent = "Violão";
-    document.querySelectorAll(".name-item")[2].textContent = "Motorola";
+    document.querySelectorAll(".name-item")[0].textContent = lastFoodSelected.querySelector(".food-title").textContent;
+    document.querySelectorAll(".name-item")[1].textContent = lastDrinkSelected.querySelector(".food-title").textContent;
+    document.querySelectorAll(".name-item")[2].textContent = lastDissertSelected.querySelector(".food-title").textContent;
 
-    document.querySelectorAll(".price-item")[0].textContent = "3,20";
-    document.querySelectorAll(".price-item")[1].textContent = "4,60";
-    document.querySelectorAll(".price-item")[2].textContent = "7,16";
+    document.querySelectorAll(".price-item")[0].textContent = lastFoodSelected.querySelector(".food-price").textContent.replace("R$ ","");
+    document.querySelectorAll(".price-item")[1].textContent = lastDrinkSelected.querySelector(".food-price").textContent.replace("R$ ","");
+    document.querySelectorAll(".price-item")[2].textContent = lastDissertSelected.querySelector(".food-price").textContent.replace("R$ ","");
 
-
-    document.querySelector(".total-price").textContent = Number(document.querySelectorAll(".price-item")[0].textContent.replace(",","."))
-      + Number(document.querySelectorAll(".price-item")[1].textContent.replace(",",".")) + Number(document.querySelectorAll(".price-item")[2].textContent.replace(",","."));
+    document.querySelector(".total-price").textContent = (Number(document.querySelectorAll(".price-item")[0].textContent.replace(",","."))
+      + Number(document.querySelectorAll(".price-item")[1].textContent.replace(",",".")) + Number(document.querySelectorAll(".price-item")[2].textContent.replace(",","."))).toFixed(2);
 
     document.querySelector(".total-price").textContent = "R$ " + document.querySelector(".total-price").textContent.replace(".",",")
     
@@ -92,4 +91,8 @@ function confirmYourOrder() {
 
 function cancelYourOrder() {
   document.querySelector(".order-screen").classList.add("hidden");
+}
+
+function sendOrderMsg() {
+  window.location.href = "https://api.whatsapp.com/send?phone=***********&text=*******" 
 }
