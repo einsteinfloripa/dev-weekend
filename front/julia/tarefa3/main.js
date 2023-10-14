@@ -65,3 +65,11 @@ function allowFinishOrder() {
     finishOrderButton.classList.toggle("enabled");
   }
 }
+
+function confirmYourOrder () {
+  document.querySelector(".order-screen").classList.remove("hidden");
+}
+
+function cancelYourOrder () {
+  document.querySelector(".order-screen").classList.add("hidden");
+}

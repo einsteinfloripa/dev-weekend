@@ -11,6 +11,29 @@
 </head>
 
 <body>
+    <div class="order-screen hidden">
+        <div class="order-container">
+            <div class="confirm-order">Confirme seu pedido</div>
+            <div class="order-item">
+                <p class="name-item">Frango Yin Yang</p>
+                <p class="price-item">14,90</p>
+            </div>
+            <div class="order-item">
+                <p class="name-item">Coquinha gelada</p>
+                <p class="price-item">4,90</p>
+            </div>
+            <div class="order-item">
+                <p class="name-item">Pudim</p>
+                <p class="price-item">7,90</p>
+            </div>
+            <div class="order-total">
+                <p class="total">Total</p>
+                <p class="total-price">R$ 27,70</p>
+            </div>
+            <button class="confirm-button">Tudo certo, pode pedir!</button>
+            <p class="cancel" onclick="cancelYourOrder()">Cancelar</p>
+        </div>
+    </div>
     <header class="header">
         <div class="header-title-container">
             <h2>DrivenEats</h2>
@@ -109,7 +132,7 @@
     </main>
 
     <footer class="footer">
-        <div id="finish-order" class="disabled">
+        <div id="finish-order" class="disabled" onclick="confirmYourOrder()">
             <p>Selecione os 3 itens para fechar o pedido</p>
         </div>
     </footer>
