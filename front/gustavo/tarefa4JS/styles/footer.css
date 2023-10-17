@@ -16,7 +16,7 @@
   height: 61px;
   border-radius: 50px;
 }
-.footer > div > p {
+.final_content {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -34,3 +34,8 @@
 .disabled {
   background-color: #cbcbcb;
 }/*# sourceMappingURL=footer.css.map */
+
+.buy{
+  display: flex;
+  flex-direction: column;
+}

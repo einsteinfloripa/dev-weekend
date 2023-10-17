@@ -69,7 +69,7 @@
         <div class="food-options-wrapper">
             <p>Agora, sua bebida</p>
             <div class="food-options">
-                <div id="drink" class="food-container" onclick="addClassDrink(this)">
+                <div id="drink" class="food-container" onclick="addClass(this)">
                     <div>
                         <img src="assets/coquinha_gelada.png" alt="foto da bebida">
                         <div>
@@ -89,7 +89,7 @@
         <div class="food-options-wrapper">
             <p>Por fim, sua sobremesa</p>
             <div class="food-options">
-                <div id="dissert" class="food-container" onclick="addClassDrink(this)">
+                <div id="dissert" class="food-container" onclick="addClass(this)">
                     <div>
                         <img src="assets/pudim.png" alt="foto da sobremesa">
                         <div>
@@ -106,12 +106,15 @@
             </div>
         </div>
     </main>
-
     <footer class="footer">
         <div id="finish-order" class="disabled">
-            <p class="final_content">Selecione os 3 itens para fechar o pedido</p>
+            <p id="final_content">Selecione os 3 itens para fechar o pedido</p>
         </div>
     </footer>
+    <div class="buy">
+        <h3>Confirme seu pedido</h3>
+        
+    </div>
 </body>
 
 </html>
