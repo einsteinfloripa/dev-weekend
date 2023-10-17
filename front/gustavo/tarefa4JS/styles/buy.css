@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.buy{
+  display: flex;
+  flex-direction: column;
+  background-color: #50D074;
+  gap:14%;
+  width: 60vw;
+  height: 60vh;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color:#FFFFFF ;
+  position:absolute;
+  top: 20%;
+  left: 20%;
+}
+.sub_buy{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.buy h3{
+  text-align: center;
+} 
+
+.buy button{
+  display: flex;
+  width: 60vw;
+  height: 5vh;
+  justify-content: center;
+  border-radius: 100px;
+  background: #FFF;
+}
+div.buy_itens{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+

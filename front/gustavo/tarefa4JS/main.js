@@ -39,7 +39,7 @@ function addClass(event){
 
 function verify(alimento){
     let botao = window.document.getElementById('finish-order')
-    let texto = window.document.getElementsByClassName('final_content')
+    
     if(alimento){
         console.log('libera ai')
         let botao = window.document.getElementById('finish-order')
