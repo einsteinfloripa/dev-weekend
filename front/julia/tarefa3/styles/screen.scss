@@ -1,0 +1,71 @@
+.order-screen {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    
+    background-color: rgba(255, 255, 255, 0.90);
+
+    z-index: 2;
+}
+
+.order-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 353px;
+    height: 320px;
+    padding: 25px;
+
+    background: #50D074;
+    color: white;
+    border-radius: 9px;
+    
+    font-family: "Roboto";
+    font-size: 22px;
+}
+
+.confirm-order {
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.confirm-button {
+    text-align: center;
+    width: 333px;
+    height: 52px;
+    border-radius: 25px;
+    border: none;
+
+    background-color: white;
+
+    font-family: "Roboto";
+    font-size: 22px;
+    font-weight: 700;
+    color: #50D074
+}
+
+.cancel {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 20px;
+}
