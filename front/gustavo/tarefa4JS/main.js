@@ -10,7 +10,9 @@ let drink = false;
 var foodToBy = []
 var foodToByP = []
 var drinkToBy = []
+var drinkToByP = []
 var desertToBy = []
+var desertToByP = []
 function addClass(event){
     //let foodContainer = document.querySelector('.food-container');
     console.log('event', event)
@@ -30,10 +32,10 @@ function addClass(event){
         chiken = teste1
         
         let foodname =  event.getElementsByClassName('food-title')[0].textContent
-        let foodPrice = event.getElementsByClassName('food-price')[0].textContent.replace("R$ ","")
-        //console.log('foodname:',foodName)
+        let foodPrice = event.getElementsByClassName('food-price')[0].textContent.replace("R$ ","").replace(",",".")
+        
         foodToBy.push(foodname)
-        //foodToBy.push(foodPrice)
+        foodToByP.push(foodPrice)
 
     }
     else if(elementId=='drink'){
@@ -49,9 +51,10 @@ function addClass(event){
         event.querySelector("#check").classList.toggle("hidden")
         drink = teste2
         let drinkName =  event.getElementsByClassName('food-title')[0].textContent
-        let drinkPrice = event.getElementsByClassName('food-price')[0].textContent.replace("R$ ","")
+        let drinkPrice = event.getElementsByClassName('food-price')[0].textContent.replace("R$ ","").replace(",",".")
         drinkToBy.push(drinkName)
-        drinkToBy.push(drinkPrice)
+        drinkToByP.push(drinkPrice)
+        console.log(drinkPrice)
         
     }
     else{
@@ -67,13 +70,13 @@ function addClass(event){
         event.querySelector("#check").classList.toggle("hidden")
         desert = teste3
         let desertName =  event.getElementsByClassName('food-title')[0].textContent
-        let desertPrice = event.getElementsByClassName('food-price')[0].textContent.replace("R$ ","")
-        console.log(desertName)
+        let desertPrice = event.getElementsByClassName('food-price')[0].textContent.replace("R$ ","").replace(",",".")
+
         desertToBy.push(desertName)
-        desertToBy.push(desertPrice)
+        desertToByP.push(desertPrice)
         }
-let food = (desert === true && drink === true && chiken === true); //verificando se as 3 comidas estão selecionadas
-console.log('testefalfalfasle?', chiken,drink,desert)
+        let food = (desert === true && drink === true && chiken === true); //verificando se as 3 comidas estão selecionadas
+console.log(drinkToByP)
 verify(food);
     
 }
@@ -85,17 +88,22 @@ function buy(){ //adicionando os textos na tela de cada elemento de acordo com a
     let foodFinalScreen = window.document.getElementById('chikenn')
     let drinksFinalScreen = window.document.getElementById('drinkn')
     let desertFinalScreen = window.document.getElementById('desertn')
-    foodFinalScreen.textContent = foodToBy[foodToBy.length]
-    drinksFinalScreen.textContent = drinkToBy[drinkToBy.length]
-    desertFinalScreen.textContent = desertToBy[desertToBy.length]
+    foodFinalScreen.textContent = foodToBy[foodToBy.length - 1]
+    drinksFinalScreen.textContent = drinkToBy[drinkToBy.length - 1]
+    desertFinalScreen.textContent = desertToBy[desertToBy.length - 1]
     let foodFinalScreenP = window.document.getElementsByClassName('food_priceC')
     let drinksFinalScreenP = window.document.getElementsByClassName('food_priceD')
     let desertFinalScreenP = window.document.getElementsByClassName('food_priceDE')
-    foodFinalScreenP.textContent = foodToBy[1]
-    drinksFinalScreenP.textContent = drinkToBy[1]
-    desertFinalScreenP.textContent = desertToBy[1]
-
-
+    console.log(drinksFinalScreenP)
+    console.log(drinkToByP)
+    foodFinalScreenP[0].textContent = foodToByP[foodToByP.length - 1]
+    drinksFinalScreenP[0].textContent = drinkToByP[drinkToByP.length - 1]
+    desertFinalScreenP[0].textContent = desertToByP[desertToByP.length - 1]
+    let total = (foodToByP[foodToByP.length - 1] + desertToByP[desertToByP.length - 1] + drinkToByP[drinkToByP.length - 1])
+    let Ftotal = total
+    let divTotal = window.document.getElementsByClassName('food_priceTOTAL')[0]
+    divTotal.innerHTML = Ftotal
+    console.log(total)
 }
 function verify(alimento){
     let botao = window.document.getElementById('finish-order')
