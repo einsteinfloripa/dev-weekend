@@ -96,13 +96,17 @@ function buy(){ //adicionando os textos na tela de cada elemento de acordo com a
     let desertFinalScreenP = window.document.getElementsByClassName('food_priceDE')
     console.log(drinksFinalScreenP)
     console.log(drinkToByP)
-    foodFinalScreenP[0].textContent = foodToByP[foodToByP.length - 1]
-    drinksFinalScreenP[0].textContent = drinkToByP[drinkToByP.length - 1]
-    desertFinalScreenP[0].textContent = desertToByP[desertToByP.length - 1]
-    let total = (foodToByP[foodToByP.length - 1] + desertToByP[desertToByP.length - 1] + drinkToByP[drinkToByP.length - 1])
-    let Ftotal = total
+    let foodtotal = foodFinalScreenP[0].textContent = foodToByP[foodToByP.length - 1]
+    let drinktotal = drinksFinalScreenP[0].textContent = drinkToByP[drinkToByP.length - 1]
+    let deserttotal = desertFinalScreenP[0].textContent = desertToByP[desertToByP.length - 1]
+    foodtotal = Number(foodtotal)
+    drinktotal = Number(drinktotal)
+    deserttotal = Number(deserttotal)
+    let total = foodtotal + drinktotal + deserttotal
+    console.log('esse é o total',total)
+    total = String(total)
     let divTotal = window.document.getElementsByClassName('food_priceTOTAL')[0]
-    divTotal.innerHTML = Ftotal
+    divTotal.innerHTML = (total.slice(0,5))
     console.log(total)
 }
 function verify(alimento){
