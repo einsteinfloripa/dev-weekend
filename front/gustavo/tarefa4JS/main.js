@@ -4,19 +4,11 @@ let telafinal = document.getElementsByClassName('indetificaessamerda')[0];
 telafinal.classList.add('screenbuy');
 
 
-let desert = false;
-let chiken = false;
-let drink = false;
-var foodToBy = []
-var foodToByP = []
-var drinkToBy = []
-var drinkToByP = []
-var desertToBy = []
-var desertToByP = []
-function addClass(event){
-    //let foodContainer = document.querySelector('.food-container');
+let desert = false;let chiken = false; let drink = false; var foodToBy = []; var foodToByP = []; var drinkToBy = []; var drinkToByP = [] ;var desertToBy = []; var desertToByP = []
+
+function addClass(event){ 
     console.log('event', event)
-    const elementId = event.id;
+    const elementId = event.id;//adiciona classes de acordo com o ID
     console.log('food',elementId)
     const food_options = document.querySelectorAll('#food');
     if(elementId=='food'){
@@ -82,7 +74,7 @@ verify(food);
 }
 
 function buy(){ //adicionando os textos na tela de cada elemento de acordo com a lista
-    //quanta variavelaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
     telafinal.classList.remove('screenbuy')
     telafinal.classList.add('fix')
     let foodFinalScreen = window.document.getElementById('chikenn')
@@ -106,7 +98,7 @@ function buy(){ //adicionando os textos na tela de cada elemento de acordo com a
     console.log('esse é o total',total)
     total = String(total)
     let divTotal = window.document.getElementsByClassName('food_priceTOTAL')[0]
-    divTotal.innerHTML = (total.slice(0,5))
+    divTotal.innerHTML = 'R$' + (total.slice(0,5))
     console.log(total)
 }
 function verify(alimento){

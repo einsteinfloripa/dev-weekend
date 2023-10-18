@@ -5,7 +5,7 @@
   background-color: #50D074;
   gap:6%;
   width: 60vw;
-  height: 37vh;
+  height: 28vh;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -23,6 +23,11 @@
 #buy h3{
   text-align: center;
   padding-top: 10px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color:#FFFFFF ;
+  
 } 
 
 #buy button{
@@ -33,14 +38,24 @@
   align-items: center;
   border-radius: 100px;
   background: #FFF;
+  color: #50D074;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  
 }
 div.buy_itens{
     display: flex;
     flex-direction: row;
-    align-content: center;
+    align-content: center;  
     justify-content: space-between;
     padding-left: 5%;
     padding-right: 5%;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color:#FFFFFF ;
+  ;
 }
 
 .buyin{
