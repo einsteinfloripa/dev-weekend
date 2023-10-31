@@ -1,17 +1,25 @@
 
 // se a classe estiver no elemento, o toggle remove e retorna false. Se não existir, ele adiciona e retorna true
-let telafinal = document.getElementsByClassName('indetificaessamerda')[0]; 
+let telafinal = document.getElementsByClassName('final_screen')[0]; 
 telafinal.classList.add('screenbuy');
 
 
-let desert = false;let chiken = false; let drink = false; var foodToBy = []; var foodToByP = []; var drinkToBy = []; var drinkToByP = [] ;var desertToBy = []; var desertToByP = []
+let desert = false;
+let chiken = false;
+let drink = false; 
+let foodToBy = []; 
+let foodToByP = []; 
+let drinkToBy = [];
+let drinkToByP = [] ;
+let desertToBy = []; 
+let desertToByP = [];
 
 function addClass(event){ 
-    console.log('event', event)
+    
     const elementId = event.id;//adiciona classes de acordo com o ID
-    console.log('food',elementId)
+    
     const food_options = document.querySelectorAll('#food');
-    if(elementId=='food'){
+    if(elementId==='food'){
         for(let i=0; i <food_options.length; i++){
             let childrent_take = food_options[i];
             if (childrent_take.classList.contains("selected")){
@@ -19,18 +27,18 @@ function addClass(event){
                 childrent_take.querySelector("#check").classList.toggle("hidden");
                 }
             }
-        let teste1 = event.classList.toggle("selected");
+        const chikenSelectd = event.classList.toggle("selected");
         event.querySelector("#check").classList.toggle("hidden")
-        chiken = teste1
+        chiken = chikenSelectd
         
-        let foodname =  event.getElementsByClassName('food-title')[0].textContent
-        let foodPrice = event.getElementsByClassName('food-price')[0].textContent.replace("R$ ","").replace(",",".")
+        const foodname =  event.getElementsByClassName('food-title')[0].textContent
+        const foodPrice = event.getElementsByClassName('food-price')[0].textContent.replace("R$ ","").replace(",",".")
         
         foodToBy.push(foodname)
         foodToByP.push(foodPrice)
 
     }
-    else if(elementId=='drink'){
+    else if(elementId==='drink'){
         const drinkOptions = document.querySelectorAll('#drink');
         for(let i=0; i <drinkOptions.length; i++){
             let childrent_take = drinkOptions[i];
@@ -39,14 +47,14 @@ function addClass(event){
                 childrent_take.querySelector("#check").classList.toggle("hidden");
                 }
             }
-        let teste2 = event.classList.toggle("selected");
+        const drinkSelect = event.classList.toggle("selected");
         event.querySelector("#check").classList.toggle("hidden")
-        drink = teste2
-        let drinkName =  event.getElementsByClassName('food-title')[0].textContent
-        let drinkPrice = event.getElementsByClassName('food-price')[0].textContent.replace("R$ ","").replace(",",".")
+        drink = drinkSelect
+        const drinkName =  event.getElementsByClassName('food-title')[0].textContent
+        const drinkPrice = event.getElementsByClassName('food-price')[0].textContent.replace("R$ ","").replace(",",".")
         drinkToBy.push(drinkName)
         drinkToByP.push(drinkPrice)
-        console.log(drinkPrice)
+        
         
     }
     else{
@@ -58,17 +66,17 @@ function addClass(event){
                 childrent_take.querySelector("#check").classList.toggle("hidden");
                 }
             }
-        let teste3 = event.classList.toggle("selected");
+        const desertSelectd = event.classList.toggle("selected");
         event.querySelector("#check").classList.toggle("hidden")
-        desert = teste3
-        let desertName =  event.getElementsByClassName('food-title')[0].textContent
-        let desertPrice = event.getElementsByClassName('food-price')[0].textContent.replace("R$ ","").replace(",",".")
+        desert = desertSelectd
+        const desertName =  event.getElementsByClassName('food-title')[0].textContent
+        const desertPrice = event.getElementsByClassName('food-price')[0].textContent.replace("R$ ","").replace(",",".")
 
         desertToBy.push(desertName)
         desertToByP.push(desertPrice)
         }
-        let food = (desert === true && drink === true && chiken === true); //verificando se as 3 comidas estão selecionadas
-console.log(drinkToByP)
+        const food = (desert === true && drink === true && chiken === true); //verificando se as 3 comidas estão selecionadas
+
 verify(food);
     
 }
@@ -86,8 +94,7 @@ function buy(){ //adicionando os textos na tela de cada elemento de acordo com a
     let foodFinalScreenP = window.document.getElementsByClassName('food_priceC')
     let drinksFinalScreenP = window.document.getElementsByClassName('food_priceD')
     let desertFinalScreenP = window.document.getElementsByClassName('food_priceDE')
-    console.log(drinksFinalScreenP)
-    console.log(drinkToByP)
+    
     let foodtotal = foodFinalScreenP[0].textContent = foodToByP[foodToByP.length - 1]
     let drinktotal = drinksFinalScreenP[0].textContent = drinkToByP[drinkToByP.length - 1]
     let deserttotal = desertFinalScreenP[0].textContent = desertToByP[desertToByP.length - 1]
@@ -95,17 +102,17 @@ function buy(){ //adicionando os textos na tela de cada elemento de acordo com a
     drinktotal = Number(drinktotal)
     deserttotal = Number(deserttotal)
     let total = foodtotal + drinktotal + deserttotal
-    console.log('esse é o total',total)
+    
     total = String(total)
-    let divTotal = window.document.getElementsByClassName('food_priceTOTAL')[0]
+    const divTotal = window.document.getElementsByClassName('food_priceTOTAL')[0]
     divTotal.innerHTML = 'R$' + (total.slice(0,5))
-    console.log(total)
+    
 }
 function verify(alimento){
     let botao = window.document.getElementById('finish-order')
     
     if(alimento){
-        console.log('libera ai')
+        
         let botao = window.document.getElementById('finish-order')
         botao.classList.remove('disabled')
         botao.classList.add('enabled')
@@ -114,7 +121,7 @@ function verify(alimento){
         
     }
     else{
-        console.log('ta falso...')
+        
         botao.classList.add('disabled')
         botao.classList.add('final_content')
         botao.textContent = 'selecione os 3 itens para fechar o pedido'
