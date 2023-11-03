@@ -12,9 +12,13 @@ function App() {
       description: "Um pouco arros, um pouco de salada",
       price: 14.9,
     },
+    {
+      image: "https://einsteinfloripa.com.br/images/org/viana.png",
+      title: "Frango Yi",
+      description: "Um pouco arros",
+      price: 12.9,
+    },
   ];
-
-  const arrayWith10Elements = Array(96).fill(foods[0]);
 
   return (
     <>
@@ -23,13 +27,13 @@ function App() {
       <div className='food-section'>
         <SectionTitle title='Primeiro, seu prato' />
         <div>
-          {arrayWith10Elements.map((food) => (
+          {foods.map((food) => (
             <FoodContainer
-              image={food.image}
-              title={food.title}
-              description={food.description}
-              price={food.price}
-            />
+            image={food.image}
+            title={food.title}
+            description={food.description}
+            price={food.price}
+          />
           ))}
         </div>
       </div>
