@@ -1,0 +1,15 @@
+@mixin title($color: white, $size: 44px) {
+    font-family: "Righteous", sans-serif;
+    color: $color;
+    font-size: $size;
+}
+
+@mixin text($color: white, $size: 14px, $weight: 400) {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: $weight;
+    line-height: normal;
+    font-size: $size;
+
+    color: $color;
+}
