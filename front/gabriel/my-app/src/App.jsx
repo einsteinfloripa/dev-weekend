@@ -4,21 +4,22 @@ import FoodContainer from "./components/FoodContainer";
 
 import "./App.css";
 
+import axios from "axios";
+import { useEffect, useState } from "react";
+
 function App() {
-  const foods = [
-    {
-      image: "https://einsteinfloripa.com.br/images/org/viana.png",
-      title: "Frango Yin Yang",
-      description: "Um pouco arros, um pouco de salada",
-      price: 14.9,
-    },
-    {
-      image: "https://einsteinfloripa.com.br/images/org/viana.png",
-      title: "Frango Yi",
-      description: "Um pouco arros",
-      price: 12.9,
-    },
-  ];
+  const [foods, setFoods] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    axios
+      .get("http://localhost:8000/foods")
+      .then((response) => setFoods(response.data))
+      .finally(() => setLoading(false));
+  }, []);
+
+  if (loading === true) return <p>Carregando...</p>;
 
   return (
     <>
@@ -29,11 +30,11 @@ function App() {
         <div>
           {foods.map((food) => (
             <FoodContainer
-            image={food.image}
-            title={food.title}
-            description={food.description}
-            price={food.price}
-          />
+              image={food.image}
+              title={food.title}
+              description={food.description}
+              price={food.price}
+            />
           ))}
         </div>
       </div>

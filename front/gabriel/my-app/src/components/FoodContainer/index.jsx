@@ -8,7 +8,7 @@ function FoodContainer(props) {
   return (
     <div
       className={`food-container ${
-        estadoVerde === true ? "selected" : undefined
+        estadoVerde === true ? "selected" : ""
       }`}
       onClick={() => {
         setEstadoVerde(!estadoVerde);
