@@ -1,0 +1,98 @@
+{
+    "desserts": {
+        "1": {
+            "name": "Bolo de chocolate",
+            "path": "http://localhost:3000/images/123456.png",
+            "code": "123456",
+            "class": "desserts"
+        },
+        "2": {
+            "name": "Sorvete",
+            "path": "http://localhost:3000/images/153426.png",
+            "code": "153426",
+            "class": "desserts"
+        },
+        "3": {
+            "name": "Cookie",
+            "path": "http://localhost:3000/images/426153.png",
+            "code": "426153",
+            "class": "desserts"
+        },
+        "4": {
+            "name": "Bolo de cenoura",
+            "path": "http://localhost:3000/images/654321.png",
+            "code": "654321",
+            "class": "desserts"
+        },
+        "5": {
+            "name": "Pudim",
+            "path": "http://localhost:3000/images/456123.png",
+            "code": "456123",
+            "class": "desserts"
+        }
+    },
+    "foods": {
+        "1": {
+            "name": "Lasanha",
+            "path": "http://localhost:3000/images/234516.png",
+            "code": "234516",
+            "class": "foods"
+        },
+        "2": {
+            "name": "Escondidinho",
+            "path": "http://localhost:3000/images/452361.png",
+            "code": "452361",
+            "class": "foods"
+        },
+        "3": {
+            "name": "Hambuguer",
+            "path": "http://localhost:3000/images/325461.png",
+            "code": "325461",
+            "class": "foods"
+        },
+        "4": {
+            "name": "Batata frita",
+            "path": "http://localhost:3000/images/453216.png",
+            "code": "453216",
+            "class": "foods"
+        },
+        "5": {
+            "name": "Macarr\u00e3o",
+            "path": "http://localhost:3000/images/456312.png",
+            "code": "456312",
+            "class": "foods"
+        }
+    },
+    "drinks": {
+        "1": {
+            "name": "Heineken",
+            "path": "http://localhost:3000/images/526341.png",
+            "code": "526341",
+            "class": "drinks"
+        },
+        "2": {
+            "name": "Guaran\u00e1",
+            "path": "http://localhost:3000/images/415263.png",
+            "code": "415263",
+            "class": "drinks"
+        },
+        "3": {
+            "name": "Coca-cola",
+            "path": "http://localhost:3000/images/321654.png",
+            "code": "321654",
+            "class": "drinks"
+        },
+        "4": {
+            "name": "Chopp",
+            "path": "http://localhost:3000/images/635241.png",
+            "code": "635241",
+            "class": "drinks"
+        },
+        "5": {
+            "name": "Budweiser",
+            "path": "http://localhost:3000/images/524163.png",
+            "code": "524163",
+            "class": "drinks"
+        }
+    }
+}
