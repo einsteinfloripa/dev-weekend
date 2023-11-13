@@ -4,17 +4,22 @@ import FoodContainer from "./components/FoodContainer";
 
 import "./App.css";
 
-function App() {
-  const foods = [
-    {
-      image: "https://einsteinfloripa.com.br/images/org/viana.png",
-      title: "Frango Yin Yang",
-      description: "Um pouco arros, um pouco de salada",
-      price: 14.9,
-    },
-  ];
+import axios from "axios";
+import { useEffect, useState } from "react";
 
-  const arrayWith10Elements = Array(96).fill(foods[0]);
+function App() {
+  const [foods, setFoods] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    axios
+      .get("http://localhost:8000/foods")
+      .then((response) => setFoods(response.data))
+      .finally(() => setLoading(false));
+  }, []);
+
+  if (loading === true) return <p>Carregando...</p>;
 
   return (
     <>
@@ -23,7 +28,7 @@ function App() {
       <div className='food-section'>
         <SectionTitle title='Primeiro, seu prato' />
         <div>
-          {arrayWith10Elements.map((food) => (
+          {foods.map((food) => (
             <FoodContainer
               image={food.image}
               title={food.title}
