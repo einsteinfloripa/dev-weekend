@@ -1,0 +1,36 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding: 1.5rem 0;
+  background-color: #ffffff;
+}
+.footer > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 364px;
+  height: 61px;
+  border-radius: 50px;
+}
+.footer > div > p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  width: 204px;
+}
+
+.enabled {
+  background-color: #32b72f;
+}
+
+.disabled {
+  background-color: #cbcbcb;
+}/*# sourceMappingURL=footer.css.map */

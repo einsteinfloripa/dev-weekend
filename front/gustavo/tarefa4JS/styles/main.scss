@@ -1,0 +1,30 @@
+@use "header.scss" as header;
+@use 'color' as color;
+
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("./reset.scss");
+@import url("./header.scss");
+@import url("./footer.scss");
+@import url("./food.scss");
+
+
+body {
+    background-color: #eeeeee;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    gap: 40px;
+
+    margin: calc(header.$header-height + 20px) 10px;
+}
+
+.selected {
+    border: 5px solid color.$enable;
+}
+
+.hidden {
+    display: none;
+}

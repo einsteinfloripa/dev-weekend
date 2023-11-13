@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>DrivenEats</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./styles/main.scss'>
+    <link rel="stylesheet" href="./styles/buy.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-title-container">
+            <h2>DrivenEats</h2>
+            <p>Sua comida em 6 minutos</p>
+        </div>
+    </header>
+    <main>
+        <div class="food-options-wrapper">
+            <p>Primeiro, seu prato</p>
+            <div class="food-options" >
+                <div id="food" class="food-container" onclick="addClass(this)" >
+                    <div>
+                        <img src="assets/frango_yin_yang.png" alt="foto do prato">
+                        <div>
+                            <p class="food-title">Frango maromba</p>
+                            <p class="food-description">Um pouco de batata, um pouco de salada</p>
+                            <div>
+                                <p class="food-price">R$ 14,90</p>
+                                <img id="check" class="hidden" src="assets/checkmark-circle.svg" alt="check"
+                                    height="19px" width="19px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="food" class="food-container" onclick="addClass(this)" >
+                    <div>
+                        <img src="assets/frango_yin_yang.png" alt="foto do prato">
+                        <div>
+                            <p class="food-title">FRANGO DOS DEUSES</p>
+                            <p class="food-description">SUCULENTO</p>
+                            <div>
+                                <p class="food-price">R$ 14,90</p>
+                                <img id="check" class="hidden" src="assets/checkmark-circle.svg" alt="check"
+                                    height="19px" width="19px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="food" class="food-container" onclick="addClass(this)">
+                    <div>
+                        <img src="assets/frango_yin_yang.png" alt="foto do prato">
+                        <div>
+                            <p class="food-title">Frango normal</p>
+                            <p class="food-description">Um pouco de batata, um pouco de salada</p>
+                            <div>
+                                <p class="food-price">R$ 25,00</p>
+                                <img id="check" class="hidden" src="assets/checkmark-circle.svg" alt="check"
+                                    height="19px" width="19px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="food" class="food-container" onclick="addClass(this)">
+                    <div>
+                        <img src="assets/frango_yin_yang.png" alt="foto do prato">
+                        <div>
+                            <p class="food-title">Frango lolzeiro</p>
+                            <p class="food-description">Um pouco de batata, um pouco de salada</p>
+                            <div>
+                                <p class="food-price">R$ 30,54</p>
+                                <img id="check" class="hidden" src="assets/checkmark-circle.svg" alt="check"
+                                    height="19px" width="19px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="food-options-wrapper">
+            <p>Agora, sua bebida</p>
+            <div class="food-options">
+                <div id="drink" class="food-container" onclick="addClass(this)">
+                    <div>
+                        <img src="assets/coquinha_gelada.png" alt="foto da bebida">
+                        <div>
+                            <p class="food-title">Coquinha gelada</p>
+                            <p class="food-description">Lata 350ml</p>
+                            <div>
+                                <p class="food-price">R$ 4,90</p>
+                                <img id="check" class="hidden" src="assets/checkmark-circle.svg" alt="check"
+                                    height="19px" width="19px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="drink" class="food-container" onclick="addClass(this)">
+                    <div>
+                        <img src="assets/coquinha_gelada.png" alt="foto da bebida">
+                        <div>
+                            <p class="food-title">Coquinha QUENTE (versão inverno)</p>
+                            <p class="food-description">Lata 350ml</p>
+                            <div>
+                                <p class="food-price">R$ 9,90</p>
+                                <img id="check" class="hidden" src="assets/checkmark-circle.svg" alt="check"
+                                    height="19px" width="19px">
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div id="drink" class="food-container" onclick="addClass(this)">
+                    <div>
+                        <img src="assets/coquinha_gelada.png" alt="foto da bebida">
+                        <div>
+                            <p class="food-title">Coquinha zero(zero calorias feat morte a javascript)</p>
+                            <p class="food-description">Lata 350ml</p>
+                            <div>
+                                <p class="food-price">R$ 12,90</p>
+                                <img id="check" class="hidden" src="assets/checkmark-circle.svg" alt="check"
+                                    height="19px" width="19px">
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div id="drink" class="food-container" onclick="addClass(this)">
+                    <div>
+                        <img src="assets/coquinha_gelada.png" alt="foto da bebida">
+                        <div>
+                            <p class="food-title">coquinha que eu nao aguento mais olhar pra esse codigo</p>
+                            <p class="food-description">Lata 350ml</p>
+                            <div>
+                                <p class="food-price">R$ 4,90</p>
+                                <img id="check" class="hidden" src="assets/checkmark-circle.svg" alt="check"
+                                    height="19px" width="19px">
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="food-options-wrapper">
+            <p>Por fim, sua sobremesa</p>
+            <div class="food-options">
+                <div id="dissert" class="food-container" onclick="addClass(this)">
+                    <div>
+                        <img src="assets/pudim.png" alt="foto da sobremesa">
+                        <div>
+                            <p class="food-title">Apenas pudim</p>
+                            <p class="food-description">é</p>
+                            <div>
+                                <p class="food-price">R$ 7,90</p>
+                                <img id="check" class="hidden" src="assets/checkmark-circle.svg" alt="check"
+                                    height="19px" width="19px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="dissert" class="food-container" onclick="addClass(this)">
+                    <div>
+                        <img src="assets/pudim.png" alt="foto da sobremesa">
+                        <div>
+                            <p class="food-title">Pudim MIDUP</p>
+                            <p class="food-description">super</p>
+                            <div>
+                                <p class="food-price">R$ 27,90</p>
+                                <img id="check" class="hidden" src="assets/checkmark-circle.svg" alt="check"
+                                    height="19px" width="19px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="dissert" class="food-container" onclick="addClass(this)">
+                    <div>
+                        <img src="assets/pudim.png" alt="foto da sobremesa">
+                        <div>
+                            <p class="food-title">Pudim DE 4FUNÇÕES</p>
+                            <p class="food-description">estimado</p>
+                            <div>
+                                <p class="food-price">R$ 37,90</p>
+                                <img id="check" class="hidden" src="assets/checkmark-circle.svg" alt="check"
+                                    height="19px" width="19px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div id="finish-order" class="disabled">
+            <p id="final_content">Selecione os 3 itens para fechar o pedido</p>
+        </div>
+    </footer>
+    <div id="buy" class="final_screen">
+        <h3>Confirme seu pedido</h3>
+        <div class="buy_itens"><p class="food_to_buy" id="chikenn"></p><p class="food_priceC"></p></div>
+        <div class="buy_itens"><p class="food_to_buy" id="drinkn"></p><p class="food_priceD"></p></div>
+        <div class="buy_itens"><p class="food_to_buy" id="desertn"></p><p class="food_priceDE"></p></div>
+        <div class="buy_itens"><p class="food_to_buy">TOTAL</p><p class="food_priceTOTAL"></p></div>
+        <div class="sub_buy">
+            <button>Tudo certo, pode pedir!</button>
+            <h3>Cancelar</h3>
+        </div>
+    </div>
+    <script src='main.js'></script>
+</body>
+
+</html>
