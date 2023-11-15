@@ -6,17 +6,28 @@ function BuyScreen(props){
         <div className="buy-container" >
             <div className="buy-container-options">
                 <p className="text-food">{props.food?.title}</p>
-                <p className="text-food">{props.drink?.title}</p>
-                <p className="text-food">{props.desert?.title}</p>
-                <p>Total:</p>
-            </div>
-            <div className="buy-container-price">
                 <p className="text-food">{props.food?.price}</p>
+            </div>
+            <div className="buy-container-options">
+                <p className="text-food">{props.drink?.title}</p>
                 <p className="text-food">{props.drink?.price}</p>
+            </div>
+            <div className="buy-container-options">
+                <p className="text-food">{props.desert?.title}</p>
                 <p className="text-food">{props.desert?.price}</p>
+            </div>
+            <div className="buy-container-options">
+                <p>Total:</p>
                 <p>{totalPrice.toFixed(2)}</p>
             </div>
+            <div className="buy-container-buttom">
+                <div className="order">Tudo certo, Hora de perdir</div>
+            </div>
+            <div className="buy-container-buttom">
+                <div className="order orderCancel">Cancelar</div>
+            </div>
         </div>
+    
     )
 }
 

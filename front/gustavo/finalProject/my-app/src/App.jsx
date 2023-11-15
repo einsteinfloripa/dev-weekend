@@ -9,61 +9,61 @@ import { useState } from "react";
 function App() {
   const foods = [
     {
-      image: "https://einsteinfloripa.com.br/images/org/viana.png",
+      image: "https://media-cdn.tripadvisor.com/media/photo-s/1a/4b/8b/9f/kam-yin-amsterdam-zuidoost.jpg",
       title: "Frango Yin ",
-      description: "Um pouco arros!!!, um pouco de salada",
+      description: "frango kung-fu",
       price: 14.9,
     },
     {
-      image: "https://acdn.mitiendanube.com/stores/002/547/070/products/1141-9cafc074873738137b16915243850729-640-0.png",
+      image: "https://marolacomcarambola.com.br/wp-content/uploads/2016/11/receita-de-frango-com-bacon-e-molho-barbecue-1.jpg",
       title: "Frango barbicue",
-      description: "Um pouco arros!!!, um pouco de salada",
+      description: "Frango ao molho barbicue",
       price: 16.9,
     },
     {
-      image: "https://einsteinfloripa.com.br/images/org/viana.png",
+      image: "https://i0.wp.com/anamariabraga.globo.com/wp-content/uploads/2019/05/frango-assado-com-farofa.jpg?fit=1200%2C675&ssl=1",
       title: "Frango com farofa",
-      description: "Um pouco arros!!!, um pouco de salada",
+      description: "Frango com forofinha",
       price: 12.9,
     },
   ];
   const drinks = [
     {
-      image: "https://einsteinfloripa.com.br/images/org/viana.png",
-      title: "coca ",
-      description: "Um pouco arros!!!, um pouco de salada",
+      image: "https://st3.depositphotos.com/1063437/32154/i/450/depositphotos_321541624-stock-photo-can-and-glass-of-coca.jpg",
+      title: "Coca ",
+      description: "Coquinha geladinha",
       price: 14.9,
     },
     {
-      image: "https://einsteinfloripa.com.br/images/org/viana.png",
-      title: "pespsi",
-      description: "Um pouco arros!!!, um pouco de salada",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJS-dvaSQu_5LYpjSqgUE81tgn63AKn77PcQ&usqp=CAU",
+      title: "Pespsi",
+      description: "pepsi > coca?",
       price: 16.9,
     },
     {
-      image: "https://einsteinfloripa.com.br/images/org/viana.png",
-      title: "h2o",
-      description: "Um pouco arros!!!, um pouco de salada",
+      image: "https://supermaraja.com.br/wp-content/uploads/2020/08/273.jpg",
+      title: "H2o",
+      description: "h2o é mt bom",
       price: 12.9,
     },
   ];
   const desert = [
     {
-      image: "https://einsteinfloripa.com.br/images/org/viana.png",
-      title: "sorvete ",
-      description: "Um pouco arros!!!, um pouco de salada",
+      image: "https://cdn.awsli.com.br/600x450/1011/1011926/produto/39105544/casquinha-de-sorvete-biscoito-doce-conny-d56edf5d.jpg",
+      title: "Sorvete ",
+      description: "Sorvete geladinho de sobremesa",
       price: 14.9,
     },
     {
-      image: "https://einsteinfloripa.com.br/images/org/viana.png",
-      title: "paçoca",
-      description: "Um pouco arros!!!, um pouco de salada",
+      image: "https://jadoces.com.br/wp-content/uploads/2022/08/118402-2.jpg",
+      title: "Paçoca",
+      description: "Não é um docinho do RU, mas a paçoca tem seu valor",
       price: 16.9,
     },
     {
-      image: "https://einsteinfloripa.com.br/images/org/viana.png",
-      title: "morango",
-      description: "Um pouco arros!!!, um pouco de salada",
+      image: "https://cdn.sistemawbuy.com.br/arquivos/aa0543e6e28970c84ad7321d40710790/produtos/6414a343a053f/morango-bandeija-6417d918bec47.jpg",
+      title: "Morango",
+      description: "ta achando que a vida é um morango?",
       price: 12.9,
     },
   ];
@@ -79,13 +79,6 @@ function App() {
 
   return (
     <>
-      {screenContainer && (
-        <BuyScreen
-          food={foodSelect}
-          drink={drinktSelect}
-          desert={desertSelect}
-        ></BuyScreen>
-      )}
       <Header />
       <div className="food-section">
         <SectionTitle title="Primeiro, seu prato" />
@@ -104,6 +97,13 @@ function App() {
             />
           ))}
         </div>
+        {screenContainer && (
+        <BuyScreen
+          food={foodSelect}
+          drink={drinktSelect}
+          desert={desertSelect}
+        ></BuyScreen>
+      )}
         <SectionTitle title="Agora, sua bebida" />
         <div>
           {drinks.map((drinks, index) => (
