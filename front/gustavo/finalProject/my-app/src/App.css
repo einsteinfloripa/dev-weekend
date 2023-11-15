@@ -1,0 +1,16 @@
+.food-section {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.food-section > div {
+  display: flex;
+
+  gap: 20px;
+
+  overflow: scroll;
+
+  padding: 10px;
+}
