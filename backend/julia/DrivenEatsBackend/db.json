@@ -1,0 +1,62 @@
+{
+    "desserts": {
+        "1": {
+            "name": "Bolo de chocolate",
+            "path": "http://localhost:3000/images/123456.png",
+            "code": "123456",
+            "class": "desserts"
+        },
+        "2": {
+            "name": "Sorvete",
+            "path": "http://localhost:3000/images/153426.png",
+            "code": "153426",
+            "class": "desserts"
+        },
+        "3": {
+            "name": "Cookie",
+            "path": "http://localhost:3000/images/426153.png",
+            "code": "426153",
+            "class": "desserts"
+        }
+    },
+    "foods": {
+        "1": {
+            "name": "Lasanha",
+            "path": "http://localhost:3000/images/234516.png",
+            "code": "234516",
+            "class": "foods"
+        },
+        "2": {
+            "name": "Escondidinho",
+            "path": "http://localhost:3000/images/452361.png",
+            "code": "452361",
+            "class": "foods"
+        },
+        "3": {
+            "name": "Hambuguer",
+            "path": "http://localhost:3000/images/325461.png",
+            "code": "325461",
+            "class": "foods"
+        }
+    },
+    "drinks": {
+        "1": {
+            "name": "Heineken",
+            "path": "http://localhost:3000/images/526341.png",
+            "code": "526341",
+            "class": "drinks"
+        },
+        "2": {
+            "name": "Guaran\u00e1",
+            "path": "http://localhost:3000/images/415263.png",
+            "code": "415263",
+            "class": "drinks"
+        },
+        "3": {
+            "name": "Coca-cola",
+            "path": "http://localhost:3000/images/321654.png",
+            "code": "321654",
+            "class": "drinks"
+        }
+    }
+}
